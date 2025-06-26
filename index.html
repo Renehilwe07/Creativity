@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creativity indepth</title>
+    <style>
+        .advent-box{
+            border-radius: 10px;
+            width: 450px;
+            height: 650px;
+            background-color: rgb(1, 1, 1);
+            padding: 30px;
+            margin: auto;
+        }
+
+        h1{
+            color: rgb(255, 215, 0);
+            text-align: center;
+            border: 3px solid white;
+            border-radius: 10px;
+            padding: 6px ;
+            
+        }
+
+        .head1{
+            color: rgb(255, 235, 205);
+            text-align: center;
+        }
+
+        .head2{
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        img{
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            border: 3px;
+            border-radius: 10px;
+        }
+
+        p{
+            color: rgb(255, 235, 205);
+        }
+
+        strong{
+            color: black;
+            font-weight: normal;
+        }
+
+        h3{
+            text-align: center;
+            font-size: 15px;
+        } 
+
+        /*################## INFO-PAGE ####################*/
+
+        .infoPage {
+            background-color: rgb(240, 232, 222);
+            border-radius: 10px;
+            padding: 30px;
+            margin: auto;
+            width: 700px;
+            height: inherit;
+        }
+        
+        input {
+            width: 100%;
+            height: 25px;
+            margin: 12px 0;
+            border: 1px solid #929292;
+        }
+
+        textarea {
+            width: 100%;
+            height: 65px;
+            margin: 12px 0;
+            border: 1px solid #929292;
+        }  
+        
+        button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 12px 0;
+            padding: 8px 0;
+            font-weight: 600;
+            border-radius: 8px;
+            background-color: #e5e556;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .signature {
+            margin-top: 15px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: normal;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="advent-box">
+        <h1>A desire for creativity</h1>
+        <h2 class="head1">Fueling the Fire with ideas</h2>
+        <hr/>
+        <img src="file_0000000093e461f8bf9c75c024ce76de.png" />
+        <p>Sometimes, all it takes is a moment of stillness to realize how much potential lives within us. 
+            As i look around and reflect,i see inpiration in every corner- in the quiet resilience of people, 
+            the colors of a sunset, the rhythm of a song, or even the persistence of a small flower growing through
+            concreate.these little sparks remind me that creativity isn't a rare gift; it's a natural response 
+            to the world when we choose to see it with wonder. i'm learning that the desire to create isn't about
+            perfection- it's about expression, courage, and the joy of bringing something new into being.
+        </p>
+    </div>
+    <br/>
+    <br/>
+    <div class="infoPage">
+        <h2 class="head2">Learn more and provide your perspective</h2>
+        <br />
+        <p><strong>Creativity is the ability to generate new and valuable ideas, solutions, or artistic expressions.
+             It involves imagination, problem-solving, and the capacity to see things from different perspectives.
+              It's not just about artistic endeavors; creativity is a valuable skill in various fields, including
+               science, technology, and everyday problem-solving. 
+        </strong></p>
+        <a href="https://www.britannica.com/topic/creativity" target="_blank">learn more</a>
+        <br />
+        <hr/>
+        <h3>SHARE WITH US YOUR THOUGHT ON CREATIVITY</h3>
+        <br/>
+        <input type="text" placeholder="Your Name" id="name" />
+        <input type="text" placeholder="Your Email" id="email" />
+        <textarea placeholder="Type your message"></textarea>
+        <button>Submit</button>
+        <div class="signature"><a href="https://github.com/Renehilwe07">Coded by Renehilwe Maleka</a></div>
+        </div>
+    <script>
+        function infoPage(){
+            let city = prompt("Which city are you writing a response from?");
+            let age = prompt("How old are you?");
+
+            if(age < 18){
+                alert("Thank you for your perspective, please learnmore!");
+            }else{
+                alert("Thank you for your input, your matured!!")
+            }
+        }
+
+        let applyButton = document.querySelector("button");
+
+        applyButton.addEventListener("click",infoPage);
+    </script>    
+</body>
+</html>
